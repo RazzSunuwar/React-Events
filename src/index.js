@@ -17,3 +17,8 @@ class Football extends React.Component{
 };
 
 ReactDOM.render(<Football />, document.getElementById('root'));
+
+
+// Note on the second example: If you send arguments without using the bind method,
+// (this.shoot(this, "Goal") instead of this.shoot.bind(this, "Goal")), the shoot function
+// will be executed when the page is loaded instead of waiting for the button to be clicked.
