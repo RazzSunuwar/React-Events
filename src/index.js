@@ -2,14 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Example:
-// Bind this
+// Make this available in the shoot function by binding it in the constructor function:
 
 
 class Football extends React.Component{
+    constructor(props){
+        super(props)
+        this.shoot = this.shoot.bind(this)
+    }
+
     shoot = () => {
         alert(this);
         /*
-        The 'this' keyword refers to the component object
+        Thanks to the binding in the constructor function,
+        the 'this' keyword now refers to the component object
         */
     }
     render(){
