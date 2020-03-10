@@ -48,3 +48,14 @@ Or:
 2. Bind the event handler to this.
 
 Note that the first argument has to be this.
+
+
+
+React Event Object
+
+Event handlers have access to the React event that triggered the function.
+
+In our example the event is the "click" event. Notice that once again the syntax is different when using arrow functions or not.
+
+With the arrow function you have to send the event argument manually:
+
