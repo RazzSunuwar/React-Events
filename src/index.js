@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Example:
-// Send "Goal" as a parameter to the shoot function, arrow function:
+// Send "Goal" as a parameter to the shoot function:
 
 
 class Football extends React.Component{
-    shoot = (a) => {
+    shoot (a) {
         alert(a);
     }
     render(){

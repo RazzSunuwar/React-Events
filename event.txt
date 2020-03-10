@@ -43,3 +43,8 @@ If you want to send parameters into an event handler, you have two options:
 
 1. Make an anonymous arrow function:
 
+Or:
+
+2. Bind the event handler to this.
+
+Note that the first argument has to be this.
