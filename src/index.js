@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function shoot() {
-    alert("Great shot!");
-}
+// Example:
+// Put the shoot function inside the Football component:
 
-const myelement = (
-    <button onClick={shoot}>Take the shot!</button>
-)
 
-ReactDOM.render(myelement, document.getElementById('root'));
+class Football extends React.Component{
+    shoot(){
+        alert("Great Shot!")
+    }
+    render(){
+        return(
+            <button onClick={this.shoot}>Take the shoot!</button>
+        );
+    };
+};
+
+ReactDOM.render(<Football />, document.getElementById('root'));

@@ -13,3 +13,7 @@ React event handlers are written inside curly braces:
 
 onClick={shoot}  instead of onClick="shoot()".
 
+
+Event handlers
+
+A good practice is to put the event handler as a method in the component
