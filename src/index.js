@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Example:
-// Put the shoot function inside the Football component:
+// Bind this
 
 
 class Football extends React.Component{
-    shoot(){
-        alert("Great Shot!")
+    shoot = () => {
+        alert(this);
+        /*
+        The 'this' keyword refers to the component object
+        */
     }
     render(){
         return(

@@ -16,4 +16,12 @@ onClick={shoot}  instead of onClick="shoot()".
 
 Event handlers
 
-A good practice is to put the event handler as a method in the component
+A good practice is to put the event handler as a method in the component:
+
+
+Bind this
+
+For methods in React, the this keyword should represent the component that owns the method.
+
+That is why you should use arrow functions. With arrow functions, this will always represent
+the object that defined the arrow function.
