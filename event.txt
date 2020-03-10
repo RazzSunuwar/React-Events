@@ -59,3 +59,6 @@ In our example the event is the "click" event. Notice that once again the syntax
 
 With the arrow function you have to send the event argument manually:
 
+
+Without arrow function, the React event object is sent automatically as the last argument when using
+the bind() method:
