@@ -2,25 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Example:
-// Make this available in the shoot function by binding it in the constructor function:
+// Send "Goal" as a parameter to the shoot function, arrow function:
 
 
 class Football extends React.Component{
-    constructor(props){
-        super(props)
-        this.shoot = this.shoot.bind(this)
-    }
-
-    shoot = () => {
-        alert(this);
-        /*
-        Thanks to the binding in the constructor function,
-        the 'this' keyword now refers to the component object
-        */
+    shoot = (a) => {
+        alert(a);
     }
     render(){
         return(
-            <button onClick={this.shoot}>Take the shoot!</button>
+            <button onClick={this.shoot.bind(this, "Goal")}>Take the shoot!</button>
         );
     };
 };

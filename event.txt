@@ -36,3 +36,10 @@ If you must use regular functions instead of arrow functions you have to bind th
 instance using the bind() method:
 
 Note: Without the binding, the this keyword would return undefined.
+
+
+Passing Arguments
+If you want to send parameters into an event handler, you have two options:
+
+1. Make an anonymous arrow function:
+
